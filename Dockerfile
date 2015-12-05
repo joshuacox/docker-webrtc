@@ -7,6 +7,7 @@ RUN npm install webrtc-scalable-broadcast
 
 WORKDIR /node_modules/webrtc-scalable-broadcast
 
-EXPOSE 8888
+EXPOSE 8888/tcp
+EXPOSE 8888/udp
 
 ENTRYPOINT ["node", "server.js"]
