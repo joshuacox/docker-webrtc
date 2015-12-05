@@ -46,6 +46,7 @@ prod: APACHE_DATADIR MYSQL_DATADIR MYSQL_PASS rm build mysqlcid runprod
 # -e "DOCKER_UID=$(UID)" \
 # then look at chguid.sh for an example of 
 # what needs to be run in the live container upon startup
+#  wtf
 
 rundocker:
 	$(eval TMP := $(shell mktemp -d --suffix=DOCKERTMP))
